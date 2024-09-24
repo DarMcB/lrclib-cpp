@@ -1,6 +1,7 @@
 # lrclib-cpp
 
 Fetches synced lyrics from [lrclib.net](https://lrclib.net/) using c++
+
 Build with:
 ```
 g++ -o main main.cpp -lcurl
