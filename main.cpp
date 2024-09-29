@@ -63,6 +63,7 @@ int main() {
     std::regex_search(response_string, m, fmtend);
     response_string = m.prefix();
 
+    response_string = replaceString(response_string, R"(\")", R"(")");
     response_string = replaceString(response_string, "\\n", "\n");
 
     std::cout << response_string;
